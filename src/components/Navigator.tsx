@@ -1,7 +1,6 @@
 import "./Navigator.css";
-
 const Navigator = () => {
- //  const navigate = useNavigate();
+  // const navigate = useNavigate();
   return (
     <>
       <ul>
@@ -25,6 +24,9 @@ const Navigator = () => {
         </li>
         <li>
           <a href="/sachin">Sachin</a>
+        </li>
+        <li>
+          <a href="/calculator">Calculator</a>
         </li>
       </ul>
     </>

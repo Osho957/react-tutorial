@@ -5,6 +5,8 @@ import Home from "./components/Home";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import UserParams from "./components/UserParams";
 import ParamOperation from "./components/ParamOperation";
+import Form from "./components/Form";
+import Todo from "./components/ToDoList/Todo";
 function App() {
   return (
     <BrowserRouter>
@@ -13,12 +15,15 @@ function App() {
         <Route path="/virat" element={<Virat />}></Route>
         <Route path="/rahul" element={<Rahul />}></Route>
         <Route path="/" element={<Home />}></Route>
-        <Route path="/user/:userName" element={<UserParams />}></Route>
+        <Route path="/user/:userId" element={<UserParams />}></Route>
         <Route path="/:x/:operator/:y" element={<ParamOperation />}></Route>
         <Route path="/:x///:y" element={<ParamOperation />}></Route>
         <Route path="*" element={<Navigate to="/" />}></Route>
+        <Route path="/form" element={<Form />}></Route>
+        <Route path="/todo" element={<Todo />}></Route>
       </Routes>
     </BrowserRouter>
   );
 }
+
 export default App;
